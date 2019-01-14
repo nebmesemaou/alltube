@@ -634,7 +634,7 @@ class FrontController
             try {
                 return $response->withJson(
                     $this->download->getJSON(
-                        $params['url'],
+                        $params['url2'],
                         $format
                     )
                 );
