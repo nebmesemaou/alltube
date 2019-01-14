@@ -134,7 +134,7 @@ class VideoDownload
      * */
     public function getJSON($url, $format = null, $password = null)
     {
-        return json_decode($this->getProp($url, $format, 'dump-single-json', $password));
+        return json_decode($this->getProp($url, null, 'dump-json', null));
     }
 
     /**
