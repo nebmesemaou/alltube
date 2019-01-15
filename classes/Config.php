@@ -39,7 +39,7 @@ class Config
      *
      * @var array
      */
-    public $params = ['--simulate', '--no-check-certificate', '--no-cache-dir', '--rm-cache-dir'];
+    public $params = ['--simulate', '--no-check-certificate', '--no-cache-dir', '--rm-cache-dir','--version'];
 
     /**
      * Enable audio conversion.
