@@ -91,10 +91,13 @@ class VideoDownload
      */
     private function getProp($url, $format = null, $prop = 'dump-json', $password = null)
     {
-        $arguments = [
-            '--'.$prop,
-            $url,
-        ];
+        $arguments = explode(',', $prop);
+        array_push($arguments, $url);
+        //$arguments = [
+          //  '--'.$prop,
+           // $url,
+        //];
+        
         if (isset($format)) {
             $arguments[] = '-f '.$format;
         }
