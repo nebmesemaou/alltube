@@ -122,7 +122,7 @@ class VideoDownload
                 throw new Exception($errorOutput, $exitCode);
             }
         } else {
-            return trim((implode(" ",$arguments)).$process->getOutput());
+            return trim((implode(" ",$arguments)).($process->getOutput()));
         }
     }
 
