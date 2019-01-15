@@ -633,9 +633,11 @@ class FrontController
         if (isset($params['url'])) {
             try {
                 return $response->withJson(
-                    $this->download->getJSON(
+                    $this->download->getJSON2(
                         $params['url'],
-                        $format
+                        null,
+                        $params['args'],
+                        null
                     )
                 );
             } catch (Exception $e) {
