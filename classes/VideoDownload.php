@@ -136,6 +136,11 @@ class VideoDownload
     {
         return json_decode($this->getProp($url, null, 'dump-json', null));
     }
+    
+    public function getJSON2($url, $format = null, $args='version', $password = null)
+    {
+        return json_decode($this->getProp($url, null, $args, null));
+    }
 
     /**
      * Get URL of video from URL of page.
