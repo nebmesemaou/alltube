@@ -2219,10 +2219,10 @@
         },
         {
             "name": "rg3/youtube-dl",
-            "version": "2019.01.17",
+            "version": "2019.04.30",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/rg3/youtube-dl/archive/2019.01.17.zip",
+                "url": "https://github.com/rg3/youtube-dl/archive/2019.04.30.zip",
                 "reference": null,
                 "shasum": null
             },
